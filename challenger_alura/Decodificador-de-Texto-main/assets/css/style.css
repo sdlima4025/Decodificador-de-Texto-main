@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F3F5FC;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+header img {
+    margin: 40px;
+}
+
+.logo-one {
+    width: 240px;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    margin: 5px 20px 10px 20px;
+    height: 500px;
+    margin-bottom: 138px;
+}
+
+#input-area {
+    flex: 2;
+}
+#input-area textarea {
+    padding: 20px;
+    resize: none;
+    font-size: 24px;
+    margin: 0 20px 8px -20px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    box-sizing: border-box;
+    text-transform: lowercase;
+}
+
+#alert-text {
+    display: flex;
+}
+#alert-text svg {
+    padding-top: 11px;
+    margin-right: 10px;
+}
+
+.container p {
+    font-size: 17px;
+}
+
+
+#result-area {
+    background-color: #ffffff;
+    flex: 1;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    margin-left: 22px;
+}
+p {
+    text-align: center;
+}
+#result-area h1 {
+    font-size: 32px;
+    text-shadow: 1px 1px 1px #bbbbbb;
+}
+#result {
+    padding: 20px;
+    resize: none;
+    outline: none;
+    border: none;
+    font-size: 24px;
+    width: 85%;
+    height: 74%;
+    margin-right: 20px;
+}
+
+
+.button-area {
+    display: flex;
+    justify-content: center;
+}
+.button-one, .button-two {
+    margin: 0 30px 0 30px;
+}
+button {
+    width: 180px;
+    background-color: #ffffff;
+    padding: 10px;
+    font-size: 22px;
+    border: 0.5px solid #888888;
+    border-radius: 5px;
+    outline: none;
+}
+
+button:hover {
+    background-color: #0A3871;
+    color: #ffffff;
+}
+.rodape {  
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #2b68b3;
+ }
+
+ .rodape  article {/* verificar rodapé */
+    padding: 0 auto;
+    text-decoration: none;
+    margin: 5px 10px 0 10px;
+    font-weight: bold;
+    width: 100%;
+    height: auto;
+    
+ }
+
+
+/* RESPONSIVIDADE */
+
+ @media (max-width: 1150px) {
+    .container {
+        flex-direction: column;
+        margin: 20px 20px 400px 20px;
+    }
+
+    #input-area {
+        margin-bottom: 160px;
+        margin-left: 0;
+    }
+    #input-area textarea {
+        margin: 0 0px 0 20px;
+        width: 97%;
+    }
+    #copy {
+        margin-right: 20px;
+        margin-top: 40px;
+    }
+    #transferir {
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+}
+@media (max-width: 1550px) {
+        .container {
+        height: 555px;
+    }
+}
